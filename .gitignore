@@ -1,0 +1,4 @@
+*.launch
+RAM/
+FLASH/
+.cproject
