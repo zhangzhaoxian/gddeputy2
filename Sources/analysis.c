@@ -172,19 +172,19 @@ void ErrorCalculate(void)
 	if(al_flag==3&&br_flag==0)                              //30左转大
 	{
 		error=al_edge-br_end;
-		return;
+		return;	
 	}
 	if(al_flag==2&&br_flag==1)                              //21右转小
 	{
-		error=al_edge-br_end;
+		error=al_edge-al_end;
 		return;
 	}
-	if(al_flag==0&&br_flag==1)                              //01右转小
+	if(al_flag==0&&br_flag==1)                              //01右转中
 	{
 		error=a_start-al_end;
 		return;
 	}
-	if(al_flag==0&&br_flag==3)                              //03右转小
+	if(al_flag==0&&br_flag==3)                              //03右转大
 	{
 		error=br_edge-al_end;
 		return;

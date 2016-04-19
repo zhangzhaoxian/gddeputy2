@@ -83,6 +83,8 @@ void SteerControl(void)
 		    Steer_PWM[3]=(Steer_PWM[2]+Steer_PWM[1])/2+100;
 		else if(Steer_PWM[2]<2430)
 			Steer_PWM[3]=(Steer_PWM[2]+Steer_PWM[1])/2-100;
+		else
+			Steer_PWM[3]=(Steer_PWM[2]+Steer_PWM[1])/2;
 		SET_steer(Steer_PWM[3]);
 		//´æ¶æ»úÖµ
 		Steer_PWM[0]=Steer_PWM[1];Steer_PWM[1]=Steer_PWM[2];Steer_PWM[2]=Steer_PWM[3];
