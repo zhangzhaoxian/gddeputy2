@@ -87,9 +87,9 @@ void SteerControl(void)
 	}
 	if(wrong_flag==2)  //ÐÂ¼ÓÈë£¿£¿£¿£¿£¿£¿£¿
 	{
-		if(Steer_PWM[2]>2430)
+		if(Steer_PWM[2]>2500)
 		    Steer_PWM[3]=(Steer_PWM[2]+Steer_PWM[1])/2+100;
-		else if(Steer_PWM[2]<2430)
+		else if(Steer_PWM[2]<2360)
 			Steer_PWM[3]=(Steer_PWM[2]+Steer_PWM[1])/2-100;
 		else
 			Steer_PWM[3]=(Steer_PWM[2]+Steer_PWM[1])/2;
