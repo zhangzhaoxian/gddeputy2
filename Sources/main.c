@@ -8,6 +8,8 @@ int main(void) {
 
   BlueTx();
   
+  
+  SET_motor(50,50);
 
 
   /* Loop forever */

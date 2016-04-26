@@ -155,12 +155,12 @@ void ErrorCalculate(void)
 	}
 	if(al_flag==1&&br_flag==1)                              //11十字
 	{
-		error=0;
+		wrong_flag=3;
 		return;
 	}
 	if(al_flag==1&&br_flag==2)                              //12左转小
 	{
-		error=br_edge-br_end;
+		error=(br_edge-br_end)*1.3;
 		//加入一个延时函数
 		return;
 	}
@@ -176,15 +176,15 @@ void ErrorCalculate(void)
 	}
 	if(al_flag==2&&br_flag==1)                              //21右转小
 	{
-		error=al_edge-br_end;
+		error=(al_edge-al_end)*1.3;
 		return;
 	}
-	if(al_flag==0&&br_flag==1)                              //01右转小
+	if(al_flag==0&&br_flag==1)                              //01右转中
 	{
 		error=a_start-al_end;
 		return;
 	}
-	if(al_flag==0&&br_flag==3)                              //03右转小
+	if(al_flag==0&&br_flag==3)                              //03右转大
 	{
 		error=br_edge-al_end;
 		return;
