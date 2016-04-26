@@ -172,7 +172,7 @@ void ErrorCalculate(void)
 	if(al_flag==3&&br_flag==0)                              //30左转大
 	{
 		error=al_edge-br_end;
-		return;
+		return;	
 	}
 	if(al_flag==2&&br_flag==1)                              //21右转小
 	{
